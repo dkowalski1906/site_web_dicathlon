@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Futura medium";
+}
+
+.confirmation.main{
+    width: 50%;
+    align-self: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.confirmation.list{
+    list-style-type: none;
+    color: beige;
+}
+.confirmation.list li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.confirmation.list li:last-child{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+h1{
+    color: beige;
+    align-self: center;
+}
+/* header{
+    justify-content: center;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: beige;
+} */
+
+img.arrow{
+    width: 3rem;
+    height: 2rem;
+    object-fit: fill;
+    transition: transform 0.2s ease-in-out;
+}
+
+img.arrow:hover{
+    transform: scale(120%);
+}
+
+
+@font-face {
+    font-family: "Futura medium";
+    src: 
+        url(./fonts/Futura/futura-medium-01-webfont.woff2) format("woff2"),
+        url(./fonts/Futura/futura-medium-01-webfont.woff) format("woff");
+    font-weight: 200;
+} 

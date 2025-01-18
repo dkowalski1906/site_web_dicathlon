@@ -1,0 +1,82 @@
+body{
+    font-family: futura;
+}
+
+
+
+img.arrow{
+    width: 3rem;
+    height: 2rem;
+    object-fit: fill;
+    transition: transform 0.2s ease-in-out;
+}
+
+img.arrow:hover{
+    transform: scale(120%);
+}
+
+
+.boite-produit{
+    margin: 3rem ;
+    display: flex;
+   flex-direction: row;
+}
+
+.produit{
+    width: 33vw;
+    background-color: #F5E9DB;
+    border-radius: 0.5rem;
+    
+}
+  
+  .description{
+    color: #F5E9DB;
+    margin-left: 2rem;
+  }
+
+  .description ul{
+    list-style-type: none;
+    font-size: 1.5em;
+    
+  }
+
+  .marque{
+    font-size: 1.5em;
+    font-style: italic;
+    transform: translateY(-50%);
+  }
+
+  .modele{
+    font-size: 1.5em;
+    font-style: italic;
+    transform: translateY(-50%);
+  }
+
+ 
+
+
+  li{
+    font-size: medium;
+  }
+
+  .reservation{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+}
+
+input{
+    border: #F5E9DB solid 2px;
+    background-color: #00153b;
+    color: #F5E9DB;
+    margin-bottom: 1rem;
+}
+
+::-webkit-calendar-picker-indicator { background-color: white; }
+

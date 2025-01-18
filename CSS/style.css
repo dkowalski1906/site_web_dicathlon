@@ -1,0 +1,473 @@
+:root{
+    --primary : #00153b;
+    --secondary : #c9673c;
+    --tertiary: #f5e9db;
+    background-color: var(--primary);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mareservation {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+ul{
+    font-family: futura;
+    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+.resa-clients {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#contenu{
+    min-height: 100vh;
+}
+
+.placement_retour {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.shop_2 {
+    margin: 20px 20px 20px 20px;
+}
+
+
+
+.utilisateur{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.client{
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-bottom: 2rem;
+}
+
+.placement_bouton_prof {
+    display: flex;
+    justify-content: flex-start;
+    width : 100%;
+}
+
+.mareservation{
+ 
+    background-color: #F5E9DB;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.admin{
+    margin-left: 30vw;
+    margin-right: 30vw;
+}
+
+.resa-clients{
+    background-color: #F5E9DB;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.placement_conf {
+    display: flex;
+    justify-content: center;
+}
+
+.confirmation.main{
+    width: 100%;
+    align-self: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.final {
+    margin-left: 37%;
+}
+
+.confirmation.list{
+    list-style-type: none;
+    color: #00153b;
+    margin-left: 2rem;
+    margin-right:2rem ;
+}
+.confirmation.list li{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .confirmation.list li:last-child{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    justify-content: center;
+
+} */
+
+.nom{
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+    color: #00153b;
+
+}
+
+.utilisateur{
+    font-size: x-large;
+    margin-bottom: 0.5rem;
+}
+
+.boutons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+button{
+    margin-top: 1rem;
+    color: #00153b;
+    background-color: #F5E9DB;
+    border: 0.15rem solid #00153b;
+    border-radius: 0.5em;
+    padding: 0.25em;
+    font-size: 1em;
+}
+
+h1{
+    color: var(--tertiary);
+    font-family: 'Futura medium';
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: 'Futura medium';
+    font-size: 1.15em;
+    color: #f5e9db;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+label{
+    font-size: 'Futura medium';
+}
+
+a{
+    font-family: 'Futura medium';
+    font-size: 1.15em; 
+    color: #f5e9db;
+    text-decoration: none;
+}
+
+h1::first-letter{
+    font-family: 'Tangerine';
+    font-size: 3em;
+}
+
+
+h2{
+    font-family: 'Futura medium';
+    font-size: 1.25em;
+    color: var(--tertiary);
+}
+
+h3
+{
+    font-family: 'Futura medium';
+    font-size: 1.1em;
+    color: var(--tertiary);
+    text-transform: uppercase;
+}
+
+button{
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;   
+}
+
+.shop{
+    background-color: var(--primary);
+    border: 0.15rem solid var(--tertiary);
+    font-family: 'Futura medium';
+    font-size: 1em;
+    color: var(--tertiary);
+    text-transform: uppercase;
+    border-radius: 0.5em;
+    padding: 0.25em;
+}
+
+.placement_bouton_retour {
+    margin : 30px 30px 0 0;
+}
+
+.placement_bouton_suppr {
+    margin : 30px 0 0 30px;
+}
+
+.shop:hover {
+    background-color: var(--tertiary);
+    color: var(--primary);
+    text-decoration: none;
+    border: 0.1rem solid var(--primary);
+}
+
+
+button:hover, input:hover{
+    cursor: pointer;
+}
+
+
+
+button.shop:focus, input.shop:focus{
+    transition: ease-in-out background-color 0.25s;
+    color: var(--primary);
+    background-color: var(--tertiary);
+    border: 0.1rem solid var(--primary);
+}
+
+.titre, .value{
+    white-space: nowrap;
+}
+
+.titre::after{
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+li.item{
+    list-style: none;
+}
+
+img.item{
+    width: 10rem;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: var(--tertiary);
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    top: 0;
+}
+
+a.profil{
+    color: var(--tertiary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 1.1em;
+    justify-self: right;
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: var(--primary);
+    border-radius: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: space-between;
+}
+
+header .profil img{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0;
+    transform: scale(70%);
+}
+
+header .logo{
+    grid-area: 1 / 1 / 2 / 3; 
+    max-width: fit-content;
+    text-align: center;
+    width: 20vw;
+    justify-self: center;
+}
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    background-color: var(--tertiary);
+    padding-top: 2rem;
+    
+  }
+  
+  .footparty h3{
+    font-size: large;
+    color: #00153b;
+  }
+  
+  .footparty{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  
+  .reseaux{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .logoRS{
+    margin: 2rem;
+    margin-top: 1rem;
+  
+  }
+  
+  
+  .liens{
+    margin-bottom: 2rem;
+    
+  }
+  
+  .liens a{
+    margin-bottom: 1rem;
+    align-self: flex-end;
+    color: var(--primary);
+  }
+  
+  .footparty p{
+    color: var(--primary);
+  }
+  
+  .copyright{
+    background-color: var(--tertiary);
+    color: var(--primary);
+    font-size: smaller;
+  }
+  
+  .copyright p{
+   text-align: end;
+   margin-right: 1rem;
+  }
+
+/* Formulaire compte */
+
+
+h1.formaccount{
+    font-size: 1.5rem;
+}
+
+form.formaccount{
+    padding: 1rem;
+    width: 30vw;
+    color: var(--primary);
+    background-color: var(--tertiary);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 0.1rem;
+}
+
+input{
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    min-height: 2rem;
+    font-family: "Futura medium";
+    border-radius: 1rem;
+    border: 2px solid var(--primary);
+}
+
+::-webkit-calendar-picker-indicator {
+    color: var(--primary);
+}
+
+input:focus.formaccount{
+    border: 2px solid var(--primary);
+}
+
+input[type=date]{
+    font-family: "Futura medium";
+}
+
+input[type=submit]{
+    justify-self: center;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+
+div.formaccount{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+
+
+
+/*Tangerine, la fonte du début des titres*/
+
+@font-face {
+    font-family: "Tangerine";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/tangerine/v17/IurY6Y5j_oScZZow4VOxCZZM.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+/*Futura, la fonte du reste du texte*/
+
+@font-face {
+    font-family: "Futura medium";
+    src: 
+        url(/application/ressources/fonts/Futura/futura-medium-01-webfont.woff2) format("woff2"),
+        url(/application/ressources/fonts/Futura/futura-medium-01-webfont.woff) format("woff");
+    font-weight: 200;
+} 
+
+
+@font-face {
+    font-family: "Futura bold";
+    src:
+        url(/ressources/fonts/Futura/futura-bold-03-webfont.woff2) format("woff2"),
+        url(/ressources/fonts/Futura/futura-bold-03-webfont.woff) format("woff");
+}

@@ -1,0 +1,128 @@
+:root{
+  --primary : #00153b;
+  --secondary : #c9673c;
+  --tertiary: #f5e9db;
+  background-color: var(--primary);
+}
+
+canvas{
+  margin: 0;
+  padding: 0;
+  background: rgb(8,8,85);
+  background: radial-gradient(circle, rgba(8,8,85,1) 0%, rgba(11, 17, 48, 0) 25%);
+}
+
+
+
+#imgAccueil{
+    width: 100vw;
+}
+
+p{
+    color: var(--tertiary);
+    padding: 0.5rem;
+}
+
+#bouton-scroll{
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     transform: translateY(-50%);
+}
+
+#bouton-scroll button{
+  height: 3rem;
+}
+
+#bouton-scroll button img{
+  height: 100%;
+  width: 100%;
+}
+
+
+.bandeau {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+
+.bandeau div {
+    display: block;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  .bandeau p {
+    white-space: nowrap;
+    float: left;
+    animation: bandeau 2s infinite linear;
+  }
+
+  .bandeau p::after, .bandeau p::before{
+    content: attr(title);
+  }
+  
+  #statueBandeau{
+    max-width: 100%;
+  }
+
+  @keyframes bandeau {
+    from{
+       transform:translateX(-0%) 
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+
+  /* section 2 */
+#filtres{
+  padding: 2rem;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+  gap: 1rem;
+}
+  
+
+
+/* section 3 */
+
+#liste-produits{
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 0 2rem 2rem 2rem;
+
+}
+
+
+.produit.boite{
+  padding: 0rem 1rem 1rem 1rem;
+  width: calc(100%/4);
+}
+
+.produit.nom{
+  font-size: 1.25rem;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+.produit.thumbnail{
+  background-color: var(--tertiary);
+  border-radius: 0.5rem;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.produit.thumbnail:hover{
+  cursor: pointer;
+}
